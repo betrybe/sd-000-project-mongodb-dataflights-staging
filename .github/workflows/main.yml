@@ -23,7 +23,7 @@ jobs:
       - uses: actions/checkout@v2
         if: steps.wait-for-build.outputs.conclusion == 'success'
       - name: MongoDB Query Evaluator Step
-        uses: betrybe/mongodb-query-evaluator-action@testa/restaura-arquivos-dump-divididos
+        uses: betrybe/mongodb-query-evaluator-action@restaura-arquivos-dump-divididos
         id: evaluator
         if: steps.wait-for-build.outputs.conclusion == 'success'
         env:
